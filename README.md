@@ -57,8 +57,10 @@ A line that includes a non-ASCII character is isgnored.
 You can compile the program by writing 'make' in the linux terminal and pressing enter. Make sure that the 'makefile' file is in the same folder as the rest of the files.
 
 **About test.sh:**  
-Program test.sh enables you to test the program.
+Program test.sh enables you to test the program for correct output and memory problems.
 It takes two arguments: first - name of the executable file you want to test (in this case 'similar_lines'); second - name of the folder with test files.
 
 Each test in the folder should consist of two files with the same name and two different extensions: '.in' and '.out'.
-The '.in' file should include input and the '.out' file should include the expected output of the program that processed input from the '.in' file.
+The '.in' file should include input and the '.out' file should include the expected output of the program that processed input from the '.in' file.  
+
+Memory problems are detected using *valgrind*.
