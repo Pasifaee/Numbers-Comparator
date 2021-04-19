@@ -13,14 +13,7 @@ do
     else
         echo "output:     NOT OK"
     fi
-
-    if cmp -s "${file%in}err" "tmp/${file%in}err"
-    then
-        echo "error file: OK"
-    else
-        echo "error file: NOT OK"
-    fi
-
+    
     valgrind --error-exitcode=123 --leak-check=full --show-leak-kinds=all --errors-for-leak-kinds=all ../$1 <"$file"
     valgrind_ret_val=$?
     if (($valgrind_ret_val == 0))
