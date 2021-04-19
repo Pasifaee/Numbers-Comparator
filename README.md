@@ -5,15 +5,15 @@ This program allows you to compare lines of words and numbers in multiple format
 This program reads lines of:
 - words,
 - integer numbers in decimal, hexadecimal and octal base,
-- floating point numbers in decimal format,
-and returns numbers of lines that contain the same sets of words and numbers.
-Numbers with the same value but in different formats are interpreted as the same numbers.
+- floating point numbers in decimal format,  
+  
+and returns numbers of lines that contain the same sets of words and numbers.  
 
-A line that starts with '#' is interpreted as a comment and is ignored.
+Numbers with the same value but in different formats are interpreted as the same numbers.  
+A line that starts with '#' is interpreted as a comment and is ignored.  
 A line that includes a non-ASCII character is isgnored.
 
 *Example input: (numbers at the beginning are only line numbers, not actual input)*  
- 
 `1` `9 abc`  
 `2` `abc 0x09`  
 `3` `011 ABC`  
